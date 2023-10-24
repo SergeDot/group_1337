@@ -14,7 +14,7 @@ class TestInteractions:
         time.sleep(5)
         return page
 
-    def test_drag_and_drop(self, driver):
+    def test_drag_and_drop_and_drop(self, driver):
         page = self.open_page(driver)
         page.open_droppable_page()
 
