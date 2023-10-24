@@ -1,9 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from random import randint
-import time
-
-
 
 CORRECT_USER_ID = 'standard_user'
 CORRECT_USER_PASS = 'secret_sauce'
