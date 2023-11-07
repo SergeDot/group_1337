@@ -10,6 +10,9 @@ def test_add_item_catalogue_verify_button_text_changed(driver):
     driver.find_element(By.CSS_SELECTOR, locators.user_name_input_textbox).send_keys(CORRECT_USER_ID)
     driver.find_element(By.CSS_SELECTOR, locators.user_pass_input_textbox).send_keys(CORRECT_USER_PASS)
     driver.find_element(By.CSS_SELECTOR, locators.login_button).click()
+    img_link = driver.find_element(By.CSS_SELECTOR, locators.login_button).get_attribute('src')
+    driver.get(img_link)
+
 
     add_to_cart_buttons = driver.find_elements(By.CSS_SELECTOR, locators.add_button_elements)  #getting all 'Add to Cart' buttons
     add_to_cart_random_element = add_to_cart_buttons[randint(0, len(add_to_cart_buttons) - 1)]  # selecting a random button
