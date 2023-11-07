@@ -1,0 +1,3 @@
+# LOCATORS
+
+TEST_LOCATOR = 'test'
