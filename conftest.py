@@ -7,8 +7,6 @@ from selenium.webdriver.chrome.options import Options
 def chrome_options():
     options = Options()
     options.add_argument('--window-size=1880,1220')
-    options.add_argument('--incognito')
-    # options.add_argument('--headless')
     return options
 
 @pytest.fixture()
