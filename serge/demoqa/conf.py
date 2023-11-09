@@ -1,1 +1,0 @@
-DEMOQA_BASE_URL = 'https://demoqa.com/'
