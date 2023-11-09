@@ -1,11 +1,6 @@
 from locators import *
 from selenium.webdriver.support import expected_conditions as EC
 
-def test_test():
-
-    assert True
-
-
 def test_TC_010_001_001_open_Traning_page(driver, wait):
     driver.get(HOME_PAGE)
     traning_button = wait.until(EC.element_to_be_clickable(TRANING_MENU))
